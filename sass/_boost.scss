@@ -1,0 +1,16 @@
+.boost{
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    padding: 30px;
+    @include imgProp($url-boost-desktop);
+    background-color: $Primary-Dark-Violet;
+
+    h1{
+        margin: 20px;
+        color: $Wight
+    }
+    .start{
+        @extend %btn;
+    }
+}

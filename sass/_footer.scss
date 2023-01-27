@@ -1,0 +1,39 @@
+footer{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    background-color: $Very-Dark-Violet;
+    @extend %flexBox;
+
+    .companyFooter{
+        height: 110px;
+    }
+    .social{
+        display: flex;
+        li{
+            margin-right: 20px;
+        }
+    }
+    a{
+        color: $Gray;
+    }
+}
+
+@media screen and (max-width:750px) {
+    footer{
+        text-align: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        .featuresFooter, .companyFooter, .resourcesFooter, img{
+            margin-bottom: 35px;
+        }
+        .social{
+            width: 90%;
+            margin: 35px auto;
+             li{
+                margin: 0 auto;
+             }
+        }
+    }
+}

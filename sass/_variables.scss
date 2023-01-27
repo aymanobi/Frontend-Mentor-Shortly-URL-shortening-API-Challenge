@@ -1,0 +1,54 @@
+$font-family:'Poppins', sans-serif;
+$font-weight-midium: 500;
+$font-weight-bold: 700;
+$Wight: #ffff;
+$Primary-Cyan: hsl(180, 66%, 49%);
+$Primary-Dark-Violet: hsl(257, 27%, 26%);
+$Secondary-Red: hsl(0, 87%, 67%);
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+$url: url("./images/bg-shorten-desktop.svg");
+$url-mobile: url("./images/bg-shorten-mobile.svg");
+$url-boost-desktop: url("./images/bg-boost-desktop.svg");
+$url-boost-mobile: url("./images/bg-boost-mobile.svg");
+
+%btnPadding{
+    padding: 10px 20px;
+}
+%btn{
+    background-color: $Primary-Cyan;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: $Wight;
+    font-weight: $font-weight-bold;
+    border: 0;
+    outline: 0;
+}
+%flexBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin main(){
+    width: 100%;
+}
+@mixin section(){
+    width: 90%;
+    margin: auto;
+}
+@mixin imgProp($imgUrl){
+    background-image: $imgUrl;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+$steps: (0,1,2,3,4,5,6);
+
+@each $step in $steps {
+    .try-#{$step}{transform: translateY($step*15px);}
+
+    .mb-#{$step}{margin-bottom: #{$step*10}px;}
+}

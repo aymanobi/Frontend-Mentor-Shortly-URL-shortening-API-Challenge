@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Build your brand’s recognition and get detailed insights 
+  on how your links are performing.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="./images/logo.svg" alt="logo">
+      <div class="navElem" id="navig">
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+        <hr>
+        <div class="buttons">
+          <button class="btn-primary">Login</button>
+          <button class="btn-secondary">Sign Up</button>
+        </div>
+      </div>
+
+      <button id="mobileMenu"><ion-icon name="menu-outline"></ion-icon></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="left">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+        <button class="btn">Get Started</button>
+      </div>
+
+      <div class="right">
+        <img src="./images/illustration-working.svg" alt="illustration-working">
+      </div>
+
+
+    </section>
+
+
+
+    <section class="statistics">
+      <article class="shortenAll">
+
+        <div class="shorten">
+          <input type="url" name="shorten" id="shortenInput" placeholder="Shorten a link here..." required>
+          <button id="shortenBtn">Shorten It!</button>
+
+        </div>
+
+        <div class="linksShortened">
+          <ul id="linksElement">
+          </ul>
+        </div>
+
+      </article>
+
+      <article class="advanced">
+        <div class="txt">
+          <h1>Advanced Statistics</h1>
+          <p>Track how your links are performing across the web with our
+            advanced statistics dashboard.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature try-0">
+            <div class="image">
+              <img src="./images/icon-brand-recognition.svg" alt="icon-brand-recognition">
+            </div>
+            <p class="str"><strong>Brand Recognition</strong></p>
+            <p class="parag">Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+
+          <div class="feature try-1">
+            <div class="image">
+              <img src="./images/icon-detailed-records.svg" alt="icon-brand-record">
+            </div>
+            <p class="str"><strong>Detailed Records</strong></p>
+            <p class="parag">Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions..</p>
+          </div>
+
+          <div class="feature try-2">
+            <div class="image">
+              <img src="./images/icon-fully-customizable.svg" alt="icon-fully-customizable">
+            </div>
+            <p class="str"><strong>Fully Customizable</strong></p>
+            <p class="parag">Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.</p>
+          </div>
+        </div>
+
+      </article>
+    </section>
+
+    <section class="boost">
+      <h1>Boost your links today</h1>
+      <button class="start">Get Started</button>
+    </section>
+  </main>
+
+  <footer>
+    <img src="./images/logo.svg" alt="logo">
+    <div class="featuresFooter">
+      <p class="mb-2"><Strong>Features</Strong></p>
+      <p><a href="#">Link Shortening</a></p>
+      <p><a href="#">Branded Links</a></p>
+      <p><a href="#">Analytics</a></p>
+    </div>
+    <div class="resourcesFooter">
+      <p class="mb-2"><Strong>Resources</Strong></p>
+      <p><a href="#">Blog</a></p>
+      <p><a href="#">Developers</a></p>
+      <p><a href="#">Support</a></p>
+    </div>
+    <div class="companyFooter">
+      <p class="mb-2"><Strong>Company</Strong></p>
+      <p><a href="#">About</a></p>
+      <p><a href="#">Our Team</a></p>
+      <p><a href="#">Careers</a></p>
+      <p><a href="#">Contact</a></p>
+    </div>
+    <ul class="social">
+      <li><a href="#"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a></li>
+      <li><a href="#"><img src="./images/icon-instagram.svg" alt="icon-instagram"></a></li>
+      <li><a href="#"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
+      <li><a href="#"><img src="./images/icon-twitter.svg" alt="icon-twitter"></a></li>
+    </ul>
+  </footer>
+  <!--  -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
